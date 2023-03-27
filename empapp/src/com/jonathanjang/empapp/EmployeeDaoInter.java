@@ -3,7 +3,7 @@ package com.jonathanjang.empapp;
 public interface EmployeeDaoInter {
 
     //create employee
-    public void createEmployee();
+    public void createEmployee(Employee emp);
     //show all employee
     public void showALlEmployee();
     //show employee based on id
