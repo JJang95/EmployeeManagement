@@ -37,22 +37,22 @@ public class EmployeeDaoImpl implements EmployeeDaoInter {
         con= DBConnection.createDBConnection();
         String query = "select * from employee";
         System.out.println("Employee Info: ");
-        System.out.println("----------------------------------------------------");
-        System.out.format("%s\t%s\t%s\t%s\t%s\n","ID","Name","Salary","Age","Position");
-        System.out.println("----------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
+        System.out.format("%-10s%-25s%-15s%-10s%-25s\n","ID","Name","Salary","Age","Position");
+        System.out.println("------------------------------------------------------------------------");
 
         try {
             Statement stmt = con.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while (result.next()) {
-                System.out.format("%d\t%s\t%d\t%d\t%s\n",
+                System.out.format("%-10d%-25s%-15d%-10d%-25s\n",
                         result.getInt(1),
                         result.getString(2),
-                        result.getInt( 3),
+                        result.getInt(3),
                         result.getInt(4),
                         result.getString(5));
-                System.out.println("----------------------------------------------------");
+                System.out.println("------------------------------------------------------------------------");
             }
 
         } catch (Exception ex) {
@@ -65,17 +65,23 @@ public class EmployeeDaoImpl implements EmployeeDaoInter {
         con = DBConnection.createDBConnection();
         String query = "select * from employee where id =" + id;
 
+        System.out.println("Employee Info: ");
+        System.out.println("------------------------------------------------------------------------");
+        System.out.format("%-10s%-25s%-15s%-10s%-25s\n","ID","Name","Salary","Age","Position");
+        System.out.println("------------------------------------------------------------------------");
+
         try {
             Statement stmt = con.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while (result.next()) {
-                System.out.format("%d\t%s\t%d\t%d\t%s\n",
+                System.out.format("%-10d%-25s%-15d%-10d%-25s\n",
                         result.getInt(1),
                         result.getString(2),
                         result.getInt( 3),
                         result.getInt(4),
                         result.getString(5));
+                System.out.println("------------------------------------------------------------------------");
             }
 
         } catch (Exception ex) {
