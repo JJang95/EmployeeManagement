@@ -18,6 +18,7 @@ public class Main {
 
             System.out.println("Please enter your choice: ");
             int ch = sc.nextInt();
+
             switch (ch) {
                 case 1:
                     Employee emp = new Employee();
@@ -38,9 +39,18 @@ public class Main {
                     emp.setPosition(position);
                     dao.createEmployee(emp);
                     break;
+
                 case 2:
                     dao.showALlEmployee();
                     break;
+
+                    case 3:
+                        System.out.println("Enter ID to show detail: ");
+                        int empid = sc.nextInt();
+                        dao.showEmployeeBasedOnID(empid);
+                        break;
+
+
                 case 6:
                     System.out.println("Thank you for using our application!");
                     System.exit(0);

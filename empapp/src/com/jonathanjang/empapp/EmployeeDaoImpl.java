@@ -52,6 +52,7 @@ public class EmployeeDaoImpl implements EmployeeDaoInter {
                         result.getInt( 3),
                         result.getInt(4),
                         result.getString(5));
+                System.out.println("----------------------------------------------------");
             }
 
         } catch (Exception ex) {
@@ -61,7 +62,25 @@ public class EmployeeDaoImpl implements EmployeeDaoInter {
 
     @Override
     public void showEmployeeBasedOnID(int id) {
+        con = DBConnection.createDBConnection();
+        String query = "select * from employee where id =" + id;
 
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                System.out.format("%d\t%s\t%d\t%d\t%s\n",
+                        result.getInt(1),
+                        result.getString(2),
+                        result.getInt( 3),
+                        result.getInt(4),
+                        result.getString(5));
+            }
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override
