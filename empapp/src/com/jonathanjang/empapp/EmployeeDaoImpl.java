@@ -85,11 +85,38 @@ public class EmployeeDaoImpl implements EmployeeDaoInter {
 
     @Override
     public void updateEmployee(int id, String name) {
+        con = DBConnection.createDBConnection();
+        String query = "update employee set name = ? where id = ?";
 
+        try {
+            PreparedStatement pstm = con.prepareStatement(query);
+            pstm.setString(1,name);
+            pstm.setInt(2, id);
+            int cnt = pstm.executeUpdate();
+
+            if (cnt != 0)
+                System.out.println("Employee updated successfully!");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override
     public void deleteEmployee(int id) {
+        con = DBConnection.createDBConnection();
+        String query = "delete from employee where id = ?";
 
+        try {
+            PreparedStatement pstm = con.prepareStatement(query);
+            pstm.setInt(1, id);
+            int cnt = pstm.executeUpdate();
+
+            if (cnt != 0)
+                System.out.println("Employee deleted successfully!");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }
