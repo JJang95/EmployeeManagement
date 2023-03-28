@@ -6,8 +6,9 @@ public class Employee {
 
     private int id;
     private String name;
-    private double salary;
+    private int salary;
     private int age;
+    private String position;
 
     //CONSTRUCTORS
 
@@ -15,11 +16,12 @@ public class Employee {
 
     }
 
-    public Employee(int id, String name, double salary, int age) {
+    public Employee(int id, String name, int salary, int age, String position) {
         this.id = id;
         this.name = name;
         this.salary = salary;
         this.age = age;
+        this.position = position;
     }
 
     //GETTER AND SETTER METHODS
@@ -40,11 +42,11 @@ public class Employee {
         this.name = name;
     }
 
-    public double getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
@@ -56,6 +58,14 @@ public class Employee {
         this.age = age;
     }
 
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
     //TO STRING METHODS
 
     @Override
@@ -65,6 +75,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
                 ", age=" + age +
+                ", position='" + position + '\'' +
                 '}';
     }
 }

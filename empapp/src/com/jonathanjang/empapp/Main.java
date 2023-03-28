@@ -26,16 +26,22 @@ public class Main {
                     System.out.println("Enter Name: ");
                     String name = sc.next();
                     System.out.println("Enter Salary: ");
-                    double salary = sc.nextDouble();
+                    int salary = sc.nextInt();
                     System.out.println("Enter Age: ");
                     int age = sc.nextInt();
+                    System.out.println("Enter Position: ");
+                    String position = sc.next();
                     emp.setId(id);
                     emp.setName(name);
                     emp.setSalary(salary);
                     emp.setAge(age);
+                    emp.setPosition(position);
                     dao.createEmployee(emp);
                     break;
                 case 2:
+                    dao.showALlEmployee();
+                    break;
+                case 6:
                     System.out.println("Thank you for using our application!");
                     System.exit(0);
                 default:
