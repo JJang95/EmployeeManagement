@@ -20,3 +20,8 @@ Afterwards we can press 2 to see our employee list and can see Larry was added t
 If we want to see a specific person we can also press 3 and enter their personal ID to see only their data as well
 
 ![image](https://user-images.githubusercontent.com/118594101/229329025-62b6fd63-d766-4209-a4dc-aa16cedc24d6.png)
+
+If we want to change a persons info we can press 4, enter their ID, and update a new info. In this case we can change our recently added employee Larry and change his name to Lawrence
+
+![image](https://user-images.githubusercontent.com/118594101/229329093-d222bc98-98a4-4a54-9e13-4952e81504e3.png)
+
