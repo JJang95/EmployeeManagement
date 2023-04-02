@@ -13,3 +13,6 @@ You can enter your pick below the choices
 
 This is a demonstration of how to add a new employee into our database
 
+Afterwards we can press 2 to see our employee list and can see Larry was added to our database after creation
+
+![image](https://user-images.githubusercontent.com/118594101/229329005-07c2ca58-7050-455c-9810-978fc6a7754f.png)
