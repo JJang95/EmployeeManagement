@@ -29,3 +29,4 @@ Finally we can also delete employee by pressing 5 and entering their ID
 
 ![image](https://user-images.githubusercontent.com/118594101/229329115-d17d4d71-1982-4108-97fd-2a91afb2237e.png)
 
+Overall the project helped me better understand MYSQL/database and connecting it via JDBC with my Java program. In the future I would like to conenct this with with a cloud service such as AWS so it can be more flexible and accessible. 
