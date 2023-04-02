@@ -25,3 +25,7 @@ If we want to change a persons info we can press 4, enter their ID, and update a
 
 ![image](https://user-images.githubusercontent.com/118594101/229329093-d222bc98-98a4-4a54-9e13-4952e81504e3.png)
 
+Finally we can also delete employee by pressing 5 and entering their ID 
+
+![image](https://user-images.githubusercontent.com/118594101/229329115-d17d4d71-1982-4108-97fd-2a91afb2237e.png)
+
