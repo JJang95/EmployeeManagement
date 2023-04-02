@@ -16,3 +16,7 @@ This is a demonstration of how to add a new employee into our database
 Afterwards we can press 2 to see our employee list and can see Larry was added to our database after creation
 
 ![image](https://user-images.githubusercontent.com/118594101/229329005-07c2ca58-7050-455c-9810-978fc6a7754f.png)
+
+If we want to see a specific person we can also press 3 and enter their personal ID to see only their data as well
+
+![image](https://user-images.githubusercontent.com/118594101/229329025-62b6fd63-d766-4209-a4dc-aa16cedc24d6.png)
